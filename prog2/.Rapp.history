@@ -1,0 +1,279 @@
+help(quantile)
+quantile(x)
+x
+stuff
+x <- list(rnorm(3), rnorm(3), rnorm(3))
+x
+rpois(100, 1)
+quantile(rnorm(3))
+class(quantile(rnorm(3)))
+length(quantile(rnorm(3)))
+x <- matrix(1:6, 3, 2)
+x
+rowSums(x, 1)
+rowSums(x)
+colSums(x)
+x
+apply(x, 1, sum)
+apply(x, 2, sum)
+apply(x, sum)
+apply(x, 1, sum)
+getwd()
+cd "Programming/courses"
+cd ../
+getwd()
+ls
+pwd
+getwd()
+ls .
+data <- read.csv("prog2/047.csv")
+data <- read.csv("specdata/047.csv")
+data
+start <- "someplace/elsewhere"
+end <- "204"
+start + "/" + end
+paste(start, end, sep="/")
+res <- paste(start, end, sep="/")
+res
+data <- read.csv("specdata/200.csv")
+data
+data[1]
+data[m1]
+data[,1]
+data <- read.csv("specdata/101.csv")
+data
+getwd()
+data <- getmonitor(1, "specdata")
+source('getmonitor.R')
+data <- getmonitor(1, "specdata")
+source('getmonitor.R')
+data <- getmonitor(1, "specdata")
+source('getmonitor.R')
+data <- getmonitor(1, "specdata")
+data <- getmonitor(001, "specdata")
+length(1)
+length(18)
+data <- getmonitor('001', "specdata")
+data
+as.character(1)
+des <- as.character(13)
+de
+des
+length(des)
+des.length
+des.length()
+des
+nchar(des)
+factorial(3)
+library('RUnit')
+.packages
+install.packages("RUnit")
+library('RUnit')
+test.suite <- defineTestSuite("example", dirs = file.path("tests"), testFileRegexp = '~\\d+\\.R')
+test.result <- runTestSuites(test.suite)
+test.result <- runTestSuite(test.suite)
+printTextProtocol(test.result)
+test.suite <- defineTestSuite("example", dirs = file.path("tests"), testFileRegexp = '^\\d+\\.R')
+test.result <- runTestSuite(test.suite)
+test.result <- runTestSuite(test.suite)
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+test.result <- runTestSuite(test.suite)
+test.result <- runTestSuite(test.suite)
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+as.character(3)
+append('33', 'e')
+append(33, e)
+paste('33', 'e')
+append('33', 'e', sep='')
+paste('33', 'e', sep='')
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+nchar('23')
+nchar('23asdfasdf')
+nchar(23423)
+build-string('3')
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+source("getmonitor.R")
+test.result <- runTestSuite(test.suite)
+getwd()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/getmonitor-test.R")#
+getmonitor.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/getmonitor-test.R")#
+getmonitor.testscript()
+source("complete.R")
+source("complete.R")
+source("complete.R")
+complete('specdata')
+dataFrame('some', 'thing')
+me <- vector(1:10)
+me <- 1:10
+me
+data.frame(me, 'a')
+source("complete.R")
+complete('specdata')
+source("complete.R")
+complete('specdata')
+gm
+stuff <- load.csv("specdata/001.csv")
+stuff <- read.csv("specdata/001.csv")
+stuff
+stuff$Date
+stuff[stuff$sulfate != 'NA']
+stuff[stuff$sulfate != 'NA',]
+fr <- stuff[stuff$sulfate != 'NA',]
+class(fr)
+nrow(fr)
+nrow(stuff)
+fr <- stuff[sulfate != 'NA',]
+fr <- stuff[sulfate != 'NA']
+subset(stuff, sulfate != 'NA')
+nrow(subset(stuff, sulfate != 'NA'))
+nrow(subset(stuff, sulfate != 'NA' && nitrate != 'NA'))
+subset(stuff, sulfate != 'NA' && nitrate != 'NA')
+subset(stuff, sulfate != 'NA')
+sulfs <- subset(stuff, sulfate != 'NA')
+comps <- subset(sulfs, nitrate != 'NA')
+comps
+nrow(comps)
+class(nrow(comps))
+me = 1:32
+length(me)
+stuff <- vector(32)
+st <- c(10)
+st
+st[1]
+st[2]
+st[1] = 3
+st[1]
+st[10] = 23
+st[10]
+st[11]
+me
+you
+you = 'abe'
+data.frame(me = 'number', you = 'great')
+data.frame('number' = me, 'great' = you)
+getwd()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/complete-test.R")#
+complete.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/getmonitor-test.R")#
+getmonitor.testscript()
+me <- 3
+me
+me << 4
+me << me + 4
+me
+me <- c(me, 3)
+me
+me <- c(me, 6)
+me
+me <- integer()
+me
+me <- c(me, 3)
+me
+me <- c(me, 33)
+me
+require 'corr.R'
+load("corr.R")
+require("corr.R")
+include("corr.R")
+source("corr.R")
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+stuff <- load.csv('specdata/001.csv')
+stuff <- read.csv('specdata/001.csv')
+stuff
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+me <- c(integer)
+c
+c <- c(me, 3)
+c
+c <- c(me, 23)
+c
+me <- integer()
+c <- c(me, 23)
+c
+c <- c(me, 2323)
+c
+me <- integer()
+ne
+me
+me <- c(me, 4)
+me
+me <- c(me, 234)
+me
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source('getmonitor.R')
+source('getmonitor.R')
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+sulfateTaken <- subset(data, sulfate != 'NA')#
+  completeRows <- subset(sulfateTaken, nitrate != 'NA')
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source('corr.R')
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+sulfateTaken <- subset(data, sulfate != 'NA')#
+  completeRows <- subset(sulfateTaken, nitrate != 'NA')
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()
+source("http://spark-public.s3.amazonaws.com/compdata/scripts/corr-test.R")#
+corr.testscript()

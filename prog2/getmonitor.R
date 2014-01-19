@@ -22,6 +22,13 @@ getmonitor <- function(id, directory, summarize = FALSE) {
         data
 }
 
+getcompletemonitor <- function(id, directory) {
+  data <- getmonitor(id, directory)
+  sulfateTaken <- subset(data, sulfate != 'NA')
+  completeRows <- subset(sulfateTaken, nitrate != 'NA')
+  completeRows
+}
+
 padIntegerString <- function(id) {
   padString <- ''
   if (nchar(id) == 1)
