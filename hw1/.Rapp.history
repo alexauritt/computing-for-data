@@ -1,0 +1,235 @@
+help.data.frame
+help data.frame
+help.data
+help.data.frame()
+help.data()
+help()
+help("data.frame")
+v(1,2,3)
+v = c(1:10)
+v
+numbers = c(1:10)
+words = c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
+numbers
+words
+m1 = matrix(1:6)
+m1
+dim(m1)=c(2,3)
+m1
+some = c(2,3)
+some
+m1 = matrix()
+m1
+dim(m1) = c(10,2)
+m1 = matrix(20)
+m1
+m1 = matrix(1:20)
+m1
+dim(m1) = c(10,2)
+m1
+m1 = cbind(numbers, words)
+m1
+attributes(m1)
+m1
+m1[8][1]
+m1[8][2]
+m1[8,2]
+m1[8,1]
+a = matrix(1:10, 2, 5)
+a
+x = c(1:6)
+x
+y = c(5:10)
+y
+cbind(x,y)
+crbind(x,y)
+rbind(x,y)
+help("data.frame")
+help data.frame()
+help("data.frame()")
+help data.frame
+?data.frame
+2^20
+install.packages("rjson")
+search()
+library(rjson)
+searchh()
+search()
+word_freq = read.table("/Users/alexauritt/Programming/rData/word_obscurity/all_words_normalized.json.json")
+word_freq
+word_freq[:1]
+word_freq[:2]
+word_freq[,2]
+word_freq[,1]
+word_freq[,2]
+word_freq[,3]
+ncol( word_freq)
+values = word_freq(,3)
+word_freq
+values = word_freq[,3]
+values
+values[0]
+values[1]
+values[2]
+values[3]
+values[4]
+values[6]
+values[7]
+values[8]
+values[9]
+values[10]
+values[11]
+values[12]
+values[1..20]
+values[1:20]
+values[5]
+values
+hist(values)
+values
+values[0].class
+values[0]
+values[1]
+vals = read.table("/Users/alexauritt/Programming/rData/word_obscurity/normalized_data_values_no_words.txt")
+vals
+vals[]
+vals[1]
+nrow(vals)
+vcols(vals)
+ncols(vals)
+ncol(vals)
+vals[1]
+vals[3]
+vals[,1]
+vals[1,]
+vals[1,1]
+vals[2,1]
+vals[3,1]
+hist(vals$vals)
+$data.frames
+?data.frames
+?frame
+word_freq <- read.csv('https://docs.google.com/spreadsheet/ccc?key=0AhKbRYooYcnbdGhkc0E0Q3BQTU1TbWZVYU5HVjJxbkE&usp=sharing')
+word_freq <- read.csv('http://docs.google.com/spreadsheet/ccc?key=0AhKbRYooYcnbdGhkc0E0Q3BQTU1TbWZVYU5HVjJxbkE&usp=sharing')
+vals = read.table("/Users/alexauritt/Programming/rData/word_obscurity/small_word_freq_normal.csv")
+vals
+vals[1]
+vals[1,0]
+vals[1,1]
+vals[1,2]
+summary(vals)
+details(vals)
+?summary
+details(vals, 10)
+details(vals, digits = 10)
+summary(vals, 10)
+summary(vals, 30)
+summary(vals, 20)
+summary(vals, 30)
+order(summary(vals, 30))
+sort(vals)
+order(summary(vals, 30), vals)
+order(vals, summary(vals, 30))
+summary(vals, 30)
+the_sum = summary(vals, 30)
+nrow(the_sum)
+the_sum[1]
+the_sum[1,1]
+vals
+mystuff = vals
+mystuff[1]
+mystuff[1,1]
+stripchart(mystuff$vals)
+mystuff[1,]
+list  = mystuff[1,]
+list
+list[1]
+nrow(list)
+ncol(list)
+stripchart(list$vals)
+df = data.frame(list)
+df
+stripchart(df$vals)
+class(list)
+class(vals)
+vals
+nrows(vals)
+nrow(vals)
+ncol(vals)
+stripchart(vals)
+mystuff
+class(mystuff)
+stripchart(mystuff$vals)
+stripchart(mystuff)
+stripchart(mystuff,breaks=30,xlim=c(0.00001, 0.0009))
+stripchart(mystuff$vals,breaks=30,xlim=c(0.00001, 0.0009))
+stripchart(mystuff$vals,breaks=30,xlim=c(0.00001,0.0009))
+boxplot(mystuff)
+boxplot(mystuff$vals)
+hist(mystuff$vals)
+mystuff
+summary(mystuff)
+summary(mystuff, 10)
+summary(mystuff, 20)
+getwd()
+pwd
+data <- read.csv('hw1_data.csv')
+data
+data[which(ozone > 40)]
+data[which(Ozone > 40)]
+data[which('Ozone' > 40)]
+data[which('Ozone' > 40),]
+data[which('Ozone' > 30),]
+data[data$Ozone>4o0]
+data[data$Ozone>40]
+data$Ozone
+data[data$Ozone > 40]
+subset(data, Ozone > 40)
+subset(data, Ozone > 30)
+subset(data, Ozone > 50)
+subset(data, Ozone > 60)
+subset(data, Ozone > 100)
+subset(data, Temp > 90)
+subset(data, Temp > 90, Ozone > 31)
+newbs <- subset(data, Temp > 90, Ozone > 31)
+newbs
+data
+newbs <- subset(data, Ozone > 31, Temp > 90)
+newbs
+newbs[1]
+newbs[1,]
+help subset
+help(subset)
+newbs <- subset(data, Ozone > 31 Temp > 90)
+newbs <- subset(data, Ozone > 31 && Temp > 90)
+newbs
+subset(data, Ozone > 31 && Temp > 90)
+newbs <- subset(data, Ozone > 31)
+newbs
+newbs <- subset(data, Temp > 90)
+newbs
+newbs2 <- subset(newbs, Ozone > 31)
+newbs2
+newbs2[3]
+newbs2[2]
+rs = newbs2[2]
+rs
+rs[1]
+rs[1:2]
+mean(rs)
+class(rs)
+rs[[Solar.R]]
+rs[['Solar.R']]
+mean(rs[['Solar.R']])
+data
+sixes = subset(data, Month == 6)
+sixes
+sixes[['Temp']]
+mean(sixes[['Temp']])
+may = subset(data, Month == 5)
+may
+may[['Ozone']]
+max(may[['Ozone']])
+may_oz <- may[['Ozone']]
+bad <- is.na(may_oz)
+may_oz[!bad]
+max(may_oz[!bad])

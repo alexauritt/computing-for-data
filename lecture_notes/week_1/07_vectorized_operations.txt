@@ -1,0 +1,12 @@
+Vectorized Operations --
+
+work as expected for +,-,/,*
+
+also logical operations
+x <- 1:4
+x > 2
+[FALSE, FALSE, TRUE, TRUE]
+
+element wisses matrix multiplication
+
+x * y

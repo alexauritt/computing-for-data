@@ -1,0 +1,141 @@
+everything is an object
+
+5 basic or 'atomic' classes:
+
+character
+numeric (real numbers)
+interger
+complex
+logical
+
+most basic object is a vector
+	must contain objects of the same class
+	EXCEPT a list, which is represented as vector but can contain objects of dift classes
+
+empty vector created w/ vector() function
+
+numbers in R generally treated as numeric objects (i.e. double precision real numbers)
+use L to specify explicitly that you want an integer
+Inf represents infinity. 1 / 0 = Inf
+Nan (non a number, undefined). 0 / 0
+
+R object can have attributes
+	names, dimnames
+	dimensions (e.g. matrices, array)
+	class (every object has a class)
+	length
+	other user-defined attributes or metadata
+
+at R prompt we type *expressions*
+<- assignment operator
+
+# comments go here
+
+# x will be a vector with 1,2,3...20
+
+# c() function used to create vectors of objects
+# just put in the stuff you want
+x <- c(1,4,6)
+
+# all elements w/ default values (in this case 0)
+x <- vector("numeric", length = 10)
+# types: numeric, logical, character, integer,complex
+
+#
+x <- c("1", "2")
+x <- 1:20
+
+if different object types are mixed in a vector, elements will be coerced (no errors)
+we can also explicitly coerce
+
+x <- 0:4
+# x = [0,1,2,3,4]
+y <- as.logical(x)
+# y = [f,t,t,t,t]
+
+
+m <- matrix(nrow = 2, ncol = 3)
+
+# returns 2 dimensional vector, with rows and col counts
+dim(m)
+
+# returns list, first element is attributes vector
+attributes(m)
+
+#we can assign vectors to attributes:
+m <- 1:10
+
+# m is now 1 x 10
+
+dim(m) <- c(2,5)
+
+# m is now 2 x 5
+
+cbindind and rbinding
+x <- 1:3
+y <- 10:12
+cbind(x,y)
+now we have a 3 x 2 matrix, with each vector as column
+
+rbind(x,y)
+2 x 3 matrix, with each vector as a row
+
+Lists, can hold dift types:
+x <- list(1, 'a', TRUE, 1 + 4i)
+
+LEVELS
+
+levels are used to represent categorical data.
+can be ordered or unordered
+think of them as integer vectors where each integer has a label
+factors w/ labels are better than integers because the data is self describing
+
+x <- factor(c('yes', 'no', 'yes', 'yes', 'no'))
+# we use a chacater vector to initilize factors
+
+here there are two 'levels' in the factor (yes and no)
+
+unclass(x)
+[1] 2 1 2 21
+
+we can assign levels with:
+y <- factor(c('yes', 'no', 'yes', 'yes', 'no'), levels = c('yes', 'no'))
+
+note: in this case no proceeded yes (i.e. no = 1 and yes = 2, unless we explicitly demand otherwise) because no comes before yes alphabetically
+
+Missing values:
+NA or NaN
+
+is.na() -- test if NA
+is.nan() 
+
+NA values have classes, e.g. integer NA, character NA, etc
+a NaN value is also NA, but converse not true
+
+
+Data Frames (tabular data)
+	a type of list, where each element has same length
+	each element of list ~ column
+	length of each element of list is number of rows
+	
+	frames can store dift classes in each columns
+	whereas matrixes must contain only instances of same class
+
+	row.names
+
+	often called w/ read.table(0 or read.csv()
+	data.matrix() will give you a matrix from a data frame -- this will cooerce objects that are not of same type
+
+
+Names:
+
+x <- 1:3
+names(x)
+#NULL
+
+names(x) <- c('ugly', 'pretty', 'normal')
+# we just labeled the values 1 to 3
+
+Lists can also have names
+x <- list(a =1, b = 2, c = 3)
+
