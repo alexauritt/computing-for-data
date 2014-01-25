@@ -1,0 +1,26 @@
+1.
+
+2.
+outcome <- read.csv("outcome-of-care-measures.csv", colClasses = 'character')
+
+colnames(outcome)
+
+# 11 column is for heart attack 30 day death rate
+ha30 <- as.numeric(outcome[,11])
+
+# heart failure and pneumonia
+hf30 <- as.numeric(outcome[,17])
+pn30 <- as.numeric(outcome[, 23])
+
+# plot window will have 3 rows, 1 column
+par(mfrow = c(3,1))
+
+hist(ha30, main = 'Heart Attack', xlab='30-day Death Rate')
+hist(hf30, main = 'Heart Failure', xlab='30-day Death Rate')
+hist(pn30, main = 'Pneumonia', xlab='30-day Death Rate')
+
+hist(hf30, main = 'Heart Failure', xlab=substitute(bar(x) == k, list(k=mean(hf30, na.rm = TRUE))))
+
+
+hist(pn30, main = 'Pneumonia', xlab='30-day Death Rate', prob=TRUE)
+lines(density(pn30, na.rm=TRUE))
