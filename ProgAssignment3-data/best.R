@@ -27,15 +27,21 @@ best <- function(state, outcome) {
 	outcomeData <- read.csv("outcome-of-care-measures.csv", colClasses = 'character')
 	stateOutcomes <- outcomeData[outcomeData$State == state,]
 	
+	numbers <- as.numeric(stateOutcomes[,featureNum])
+	bad <- is.na(numbers)
+
+	good <- subset(stateOutcomes, !bad)
+	minVal <- min(as.numeric(good[,featureNum]))
 	
-	minVal <- min(stateOutcomes[,featureNum])
 
 	bestHospName <- doit(stateOutcomes, minVal, featureNum)	
 	bestHospName
 }
 
 doit <- function(data, minVal, colNumber) {
-	goodLogical <- data[,colNumber] == minVal
+	
+	
+	goodLogical <- as.numeric(data[,colNumber]) == minVal
 	bestHospitals <- subset(data, goodLogical)
 	bestNames <- bestHospitals$Hospital.Name
 	invisible(min(bestNames))
