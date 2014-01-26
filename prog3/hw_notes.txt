@@ -24,3 +24,12 @@ hist(hf30, main = 'Heart Failure', xlab=substitute(bar(x) == k, list(k=mean(hf30
 
 hist(pn30, main = 'Pneumonia', xlab='30-day Death Rate', prob=TRUE)
 lines(density(pn30, na.rm=TRUE))
+
+getting list of states with 20 or more hospitals
+outcome$State returns all state values
+table(outcome$State) returns count of state instances
+
+# this returns labled logical vector
+bigState <- table(outcome$State) >= 20
+
+table(outcome$State)[bigState]
