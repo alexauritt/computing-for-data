@@ -26,7 +26,7 @@ rankhospital <- function(state, outcome, num = "best") {
 	outcomeData <- read.csv("outcome-of-care-measures.csv", colClasses = 'character')
 	stateOutcomes <- outcomeData[outcomeData$State == state,]
 	
-	numbers <- as.numeric(stateOutcomes[,featureNum])
+	numbers <- suppressWarnings(as.numeric(stateOutcomes[,featureNum]))
 	bad <- is.na(numbers)
 
 	good <- subset(stateOutcomes, !bad)
@@ -52,4 +52,4 @@ rankhospital <- function(state, outcome, num = "best") {
 	
 
 	good[selectedIndex,]$Hospital.Name
-}
+}
