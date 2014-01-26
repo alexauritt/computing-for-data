@@ -43,8 +43,12 @@ rankhospital <- function(state, outcome, num = "best") {
 	if (rank > length(stateCount))
 		solution <- 'NA'
 		
-	sortedIndices <- order(as.numeric(good[,featureNum]))
+	sortedIndices <- order(as.numeric(good[,featureNum]), good[,2])
 	selectedIndex <- sortedIndices[rank]
+	
+##	print(good[,featureNum])
+##	print(sortedIndices)
+##	print(selectedIndex)
 	
 
 	good[selectedIndex,]$Hospital.Name
