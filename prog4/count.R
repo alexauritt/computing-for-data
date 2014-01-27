@@ -9,6 +9,10 @@ count <- function(cause = NULL) {
   6
 }
 
+extractCause <- function(textLine) {
+  "other"
+}
+
 isValidCause <- function(cause) {
   ## checks that specified string is a valid cause. caps are disregarded
   validCauses <- c("asphyxiation", "blunt force", "other", "shooting", "stabbing", "unknown")
