@@ -5,11 +5,12 @@ count <- function(cause = NULL) {
 ## Extract causes of death
 ## Return integer containing count of homicides for that cause
   if (!isValidCause(cause))
-    stop("invalid caused")
+    stop("invalid cause")
   6
 }
 
 isValidCause <- function(cause) {
+  ## checks that specified string is a valid cause. caps are disregarded
   validCauses <- c("asphyxiation", "blunt force", "other", "shooting", "stabbing", "unknown")
-  cause %in% validCauses
+  tolower(cause) %in% validCauses
 }
