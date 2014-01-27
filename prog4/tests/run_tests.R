@@ -1,6 +1,5 @@
 library('RUnit')
-##source("best.R")
-##source("rankhospital.R")
+source("count.R")
 
 test.suite <- defineTestSuite("example", dirs = file.path("tests"), testFileRegexp = '^\\d+\\.R')
 
